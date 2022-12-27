@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="net.erp.model.Employees" table="employees">
+<id name="id"  column="emp_no">
+    <generator class="increment"></generator>
+</id>
+    <property name="birthDate" column="birth_date"></property>
+    <property name="firstName" column="first_name"></property>
+    <property name="lastName" column="last_name"></property>
+    <property name="gender" column="Gender"></property>
+    <property name="hireDate" column="hire_date"></property>
+</class>
+</hibernate-mapping>
